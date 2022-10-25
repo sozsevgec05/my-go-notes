@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"golesson/channels"
-)
+import "golesson/restful"
 
 func main() {
 	// variables.Demo1()
@@ -68,15 +65,32 @@ func main() {
 	// time.Sleep(5 * time.Second)
 	// fmt.Println("Main Bitti!")
 
-	ciftSayiCn := make(chan int)
-	tekSayiCn := make(chan int)
+	// ciftSayiCn := make(chan int)
+	// tekSayiCn := make(chan int)
 
-	go channels.CiftSayilar(ciftSayiCn)
-	go channels.TekSayilar(tekSayiCn)
+	// go channels.CiftSayilar(ciftSayiCn)
+	// go channels.TekSayilar(tekSayiCn)
 
-	ciftSayiToplam, teciftSayiToplam := <-ciftSayiCn, <-tekSayiCn
+	// ciftSayiToplam, teciftSayiToplam := <-ciftSayiCn, <-tekSayiCn
 
-	carpim := ciftSayiToplam * teciftSayiToplam
-	fmt.Println("Çarpım: ", carpim)
+	// carpim := ciftSayiToplam * teciftSayiToplam
+	// fmt.Println("Çarpım: ", carpim)
+
+	// interfaces.Demo1()
+	// interfaces.Demo2()
+	// interfaces.Demo3()
+
+	// defer_statement.B()
+	// defer_statement.Test()
+	// defer_statement.Demo3()
+
+	// error_handling.Demo1()
+	// error_handling.Demo2()
+	// fmt.Println(error_handling.TahminEt2(101))
+
+	// string_functions.Demo1()
+	// string_functions.Demo2()
+
+	restful.Demo1()
 
 }
